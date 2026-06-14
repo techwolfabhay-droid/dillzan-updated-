@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dillzan Resort — A Sanctuary of Distinction</title>
+<link rel="icon" type="image/png" href="logo.png" />
+<link rel="apple-touch-icon" href="logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- Page transition overlay -->
+<div class="page-transition-overlay" id="ptOverlay">
+  <div class="pt-panel"></div>
+  <div class="pt-panel"></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     OFFER BAR
+═══════════════════════════════════════════════════════════ -->
+<div id="offer-bar" aria-label="Special Offer">
+  <div class="offer-bar-track">
+    <span class="offer-bar-item">Special Offer &nbsp;—&nbsp; Was <span class="ob-original">₹4,000</span> &nbsp; Now <span class="ob-price">₹3,500</span> per person / night &nbsp;·&nbsp; Limited Time Only — Grab This Offer Now!</span>
+    <span class="offer-bar-sep">✦</span>
+    <span class="offer-bar-item">Special Offer &nbsp;—&nbsp; Was <span class="ob-original">₹4,000</span> &nbsp; Now <span class="ob-price">₹3,500</span> per person / night &nbsp;·&nbsp; Limited Time Only — Grab This Offer Now!</span>
+    <span class="offer-bar-sep">✦</span>
+    <span class="offer-bar-item">Special Offer &nbsp;—&nbsp; Was <span class="ob-original">₹4,000</span> &nbsp; Now <span class="ob-price">₹3,500</span> per person / night &nbsp;·&nbsp; Limited Time Only — Grab This Offer Now!</span>
+    <span class="offer-bar-sep">✦</span>
+    <span class="offer-bar-item">Special Offer &nbsp;—&nbsp; Was <span class="ob-original">₹4,000</span> &nbsp; Now <span class="ob-price">₹3,500</span> per person / night &nbsp;·&nbsp; Limited Time Only — Grab This Offer Now!</span>
+    <span class="offer-bar-sep">✦</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     STICKY NAVBAR
+═══════════════════════════════════════════════════════════ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <!-- Left logo -->
+    <a href="#hero" class="nav-logo">
+      <img src="logo.png" alt="Dillzan Resort Logo" />
+      <span class="nav-logo-mobile-text">THE DILLZAN RESORT</span>
+    </a>
+    <!-- Right actions -->
+    <div class="nav-actions">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#amenities">Amenities</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#founder">Our Story</a></li>
+        <li><a href="#palate">Dining</a></li>
+        <li><a href="#whatsapp">Contact</a></li>
+        <li><a href="#testimonials">Stories</a></li>
+      </ul>
+      <span class="nav-icon" title="Search">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      </span>
+      <a href="https://wa.me/917715966111" target="_blank" class="btn btn-gold nav-book">Book Now</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#rooms" onclick="closeMobile()">Rooms & Suites</a>
+  <a href="#amenities" onclick="closeMobile()">Amenities</a>
+  <a href="#gallery" onclick="closeMobile()">Gallery</a>
+  <a href="#founder" onclick="closeMobile()">Founder's Note</a>
+  <a href="#palate" onclick="closeMobile()">Dining</a>
+  <a href="#whatsapp" onclick="closeMobile()">Enquire on WhatsApp</a>
+  <a href="#testimonials" onclick="closeMobile()">Guest Stories</a>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     HERO — 3-PANEL GRID
+═══════════════════════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-grid">
+    <!-- Main large panel -->
+    <div class="hero-cell hero-main" onclick="openLightbox(0)">
+      <img src="hero1.jpeg" alt="Dillzan Resort Infinity Pool" loading="lazy" />
+      <div class="hero-badge">
+        <div class="hero-badge-title">Dillzan<br>Resort</div>
+        <div class="hero-badge-sub">A Home Away From Home · Alibaug</div>
+      </div>
+    </div>
+    <!-- Top-right panel -->
+    <div class="hero-cell hero-sub1" onclick="openLightbox(1)">
+      <img src="hero2.png" alt="Luxury Suite Interior" loading="lazy" />
+      <div class="hero-label">Luxury Suites</div>
+    </div>
+    <!-- Bottom-right panel -->
+    <div class="hero-cell hero-sub2" onclick="openLightbox(2)">
+      <img src="cuisine.jpg" alt="The Dillzan Palate Restaurant" loading="lazy" />
+      <div class="hero-label">The Dillzan Palate</div>
+    </div>
+  </div>
+
+  <!-- Booking strip -->
+  <div class="booking-strip">
+    <div class="booking-field">
+      <label>Check In</label>
+      <input type="date" />
+    </div>
+    <div class="booking-divider"></div>
+    <div class="booking-field">
+      <label>Check Out</label>
+      <input type="date" />
+    </div>
+    <div class="booking-divider"></div>
+    <div class="booking-field">
+      <label>Guests</label>
+      <select>
+        <option>1 Guest</option>
+        <option>2 Guests</option>
+        <option>3 Guests</option>
+        <option>4+ Guests</option>
+      </select>
+    </div>
+    <div class="booking-divider"></div>
+    <div class="booking-field">
+      <label>Room Type</label>
+      <select>
+        <option>Any Room</option>
+        <option>Double Occupancy Room</option>
+        <option>Triple Occupancy Room</option>
+        <option>Spacious Family Room</option>
+        <option>Dormitory</option>
+      </select>
+    </div>
+    <button class="btn btn-gold" style="flex-shrink:0;padding:0.85rem 2rem;">Check Availability</button>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     ABOUT — THE ESSENCE OF DILLZAN
+═══════════════════════════════════════════════════════════ -->
+<section id="about" class="reveal-section">
+  <div class="about-inner">
+  <div class="about-img-wrap reveal-left">
+    <img class="about-img-main" src="1.png" alt="Dillzan Resort Architecture" loading="lazy" />
+    <img class="about-img-accent" src="gallery18.jpeg" alt="Dillzan Spa" loading="lazy" />
+  </div>
+  <div class="reveal-right">
+    <div class="eyebrow">About</div>
+    <h2 class="section-title">A Home Away From Home</h2>
+    <p class="section-lead" style="font-size:0.82rem;">Nestled amidst lush greenery and located just 1 minute from Mandwa Jetty, The Dillzan Resort offers a perfect blend of comfort, hospitality, delicious food, and entertainment. Whether you're planning a family holiday, reunion, senior citizens' getaway, or a romantic escape, The Dillzan Resort promises an unforgettable experience.</p>
+
+    <p class="section-lead" style="font-size:0.82rem;margin-top:0.6rem;font-style:italic;color:var(--gold);">"For our guests, there is no 'No'. We want everyone to experience warmth, comfort and freedom, just like they would in their own home."</p>
+    <p class="section-lead" style="font-size:0.78rem;margin-top:0.3rem;">— Dillzan Wadia, Founder &amp; Owner</p>
+
+    <div style="margin-top:1rem;">
+      <p style="font-size:0.78rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem;">Perfect Venue For</p>
+      <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
+        <span style="font-size:0.72rem;background:var(--cream);color:var(--text);padding:0.25rem 0.65rem;border-radius:20px;border:1px solid rgba(197,160,89,0.3);">Family Vacations</span>
+        <span style="font-size:0.72rem;background:var(--cream);color:var(--text);padding:0.25rem 0.65rem;border-radius:20px;border:1px solid rgba(197,160,89,0.3);">Corporate Getaways</span>
+        <span style="font-size:0.72rem;background:var(--cream);color:var(--text);padding:0.25rem 0.65rem;border-radius:20px;border:1px solid rgba(197,160,89,0.3);">School &amp; College Reunions</span>
+        <span style="font-size:0.72rem;background:var(--cream);color:var(--text);padding:0.25rem 0.65rem;border-radius:20px;border:1px solid rgba(197,160,89,0.3);">Birthday Celebrations</span>
+        <span style="font-size:0.72rem;background:var(--cream);color:var(--text);padding:0.25rem 0.65rem;border-radius:20px;border:1px solid rgba(197,160,89,0.3);">Wedding Anniversaries</span>
+        <span style="font-size:0.72rem;background:var(--cream);color:var(--text);padding:0.25rem 0.65rem;border-radius:20px;border:1px solid rgba(197,160,89,0.3);">Kitty Parties</span>
+        <span style="font-size:0.72rem;background:var(--cream);color:var(--text);padding:0.25rem 0.65rem;border-radius:20px;border:1px solid rgba(197,160,89,0.3);">Group Picnics</span>
+        <span style="font-size:0.72rem;background:var(--cream);color:var(--text);padding:0.25rem 0.65rem;border-radius:20px;border:1px solid rgba(197,160,89,0.3);">Senior Citizens' Trips</span>
+        <span style="font-size:0.72rem;background:var(--cream);color:var(--text);padding:0.25rem 0.65rem;border-radius:20px;border:1px solid rgba(197,160,89,0.3);">Friends' Weekend Escapes</span>
+      </div>
+    </div>
+
+    <div class="about-stat-row" style="margin-top:1.25rem;">
+      <div>
+        <div class="about-stat-num">15</div>
+        <div class="about-stat-label">Comfortable Rooms</div>
+      </div>
+      <div>
+        <div class="about-stat-num">40+</div>
+        <div class="about-stat-label">Guest Capacity</div>
+      </div>
+      <div>
+        <div class="about-stat-num">4.9★</div>
+        <div class="about-stat-label">Google Rating</div>
+      </div>
+    </div>
+    <div style="margin-top:1.5rem;display:flex;gap:1rem;flex-wrap:wrap;">
+      <a href="#rooms" class="btn btn-gold">Explore Rooms</a>
+      <a href="#whatsapp" class="btn btn-outline">Get in Touch</a>
+    </div>
+  </div>
+  </div><!-- /.about-inner -->
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     ROOMS & SUITES
+═══════════════════════════════════════════════════════════ -->
+<section id="rooms" class="reveal-section">
+  <div class="section-header">
+    <div class="eyebrow">Accommodation</div>
+    <h2 class="section-title">Rooms & Suites</h2>
+    <p class="section-lead">15 clean, comfortable rooms for every group size — couples, families, seniors, and large groups. Total capacity: 40–45 guests.</p>
+  </div>
+  <div class="rooms-slider-wrap">
+    <div class="rooms-track" id="roomsTrack">
+      <!-- Card 1: Double Occupancy Room -->
+      <div class="room-card">
+        <div class="room-img" data-room-images>
+          <div class="room-img-track">
+            <div class="room-img-slide"><img src="hero22.png" alt="Double Room" loading="lazy" /></div>
+            <div class="room-img-slide"><img src="hero23.png" alt="Double Room interior" loading="lazy" /></div>
+            <div class="room-img-slide"><img src="hero22.png" alt="Double Room bathroom" loading="lazy" /></div>
+          </div>
+          <button class="room-img-nav room-img-prev">‹</button>
+          <button class="room-img-nav room-img-next">›</button>
+          <div class="room-img-dots"></div>
+        </div>
+        <div class="room-body">
+          <div class="room-name">Deluxe Room</div>
+          <div style="display:flex;gap:0.5rem;align-items:center;margin-bottom:1rem;font-size:0.8rem;color:var(--muted);">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            Perfect for couples &amp; small families
+          </div>
+          <div class="room-meta">
+            <div class="room-feature"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>King Size Bed</div>
+            <div class="room-feature"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>AC &amp; Fan</div>
+            <div class="room-feature"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h2l2-7 4 14 3-9 2 2h7"/></svg>Pool Access</div>
+            <div class="room-feature"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>4 Meals/Day</div>
+          </div>
+          <div class="room-footer">
+            <div style="font-size:0.8rem;color:var(--muted);">
+              <div style="font-weight:600;color:var(--gold);">₹3,500 <span style="font-weight:400;font-size:0.72rem;">/ person / night</span></div>
+              <div style="font-size:0.72rem;">2 persons = ₹7,000/night</div>
+            </div>
+            <a href="#whatsapp" class="btn btn-gold" style="padding:0.55rem 1.2rem;font-size:0.72rem;">Book</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Triple Occupancy Room -->
+      <div class="room-card">
+        <div class="room-img" data-room-images>
+          <div class="room-img-track">
+            <div class="room-img-slide"><img src="hero21.png" alt="Triple Room" loading="lazy" /></div>
+            <div class="room-img-slide"><img src="hero23.png" alt="Triple Room interior" loading="lazy" /></div>
+            <div class="room-img-slide"><img src="hero21.png" alt="Triple Room bedroom" loading="lazy" /></div>
+          </div>
+          <button class="room-img-nav room-img-prev">‹</button>
+          <button class="room-img-nav room-img-next">›</button>
+          <div class="room-img-dots"></div>
+          <span class="room-tag" style="background:#6B5B95;">TRIPLE</span>
+        </div>
+        <div class="room-body">
+          <div class="room-name">Premium Room</div>
+          <div style="display:flex;gap:0.5rem;align-items:center;margin-bottom:1rem;font-size:0.8rem;color:var(--muted);">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            Ideal for groups of three
+          </div>
+          <div class="room-meta">
+            <div class="room-feature"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>3 Beds</div>
+            <div class="room-feature"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>AC &amp; Fan</div>
+            <div class="room-feature"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h2l2-7 4 14 3-9 2 2h7"/></svg>Pool Access</div>
+            <div class="room-feature"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>4 Meals/Day</div>
+          </div>
+          <div class="room-footer">
+            <div style="font-size:0.8rem;color:var(--muted);">
+              <div style="font-weight:600;color:var(--gold);">₹3,500 <span style="font-weight:400;font-size:0.72rem;">/ person / night</span></div>
+              <div style="font-size:0.72rem;">3 persons = ₹10,500/night</div>
+            </div>
+            <a href="#whatsapp" class="btn btn-gold" style="padding:0.55rem 1.2rem;font-size:0.72rem;">Book</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Family Room -->
+      <div class="room-card">
+        <div class="room-img" data-room-images>
+          <div class="room-img-track">
+            <div class="room-img-slide"><img src="hero25.png" alt="Family Room" loading="lazy" /></div>
+            <div class="room-img-slide"><img src="hero26.png" alt="Family Room interior" loading="lazy" /></div>
+            <div class="room-img-slide"><img src="hero25.png" alt="Family Room view" loading="lazy" /></div>
+          </div>
+          <button class="room-img-nav room-img-prev">‹</button>
+          <button class="room-img-nav room-img-next">›</button>
+          <div class="room-img-dots"></div>
+        </div>
+        <div class="room-body">
+          <div class="room-name">Spacious Family Room</div>
+          <div style="display:flex;gap:0.5rem;align-items:center;margin-bottom:1rem;font-size:0.8rem;color:var(--muted);">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            Comfortably fits 4–5 guests
+          </div>
+          <div class="room-meta">
+            <div class="room-feature"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Multiple Beds</div>
+            <div class="room-feature"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>Extra Spacious</div>
+            <div class="room-feature"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h2l2-7 4 14 3-9 2 2h7"/></svg>Pool Access</div>
+            <div class="room-feature"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>4 Meals/Day</div>
+          </div>
+          <div class="room-footer">
+            <div style="font-size:0.8rem;color:var(--muted);">
+              <div style="font-weight:600;color:var(--gold);">₹3,500 <span style="font-weight:400;font-size:0.72rem;">/ person / night</span></div>
+              <div style="font-size:0.72rem;">4 persons = ₹14,000/night</div>
+            </div>
+            <a href="#whatsapp" class="btn btn-gold" style="padding:0.55rem 1.2rem;font-size:0.72rem;">Book</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: Dormitory -->
+      <div class="room-card">
+        <div class="room-img" data-room-images>
+          <div class="room-img-track">
+            <div class="room-img-slide"><img src="hero27.png" alt="Dormitory" loading="lazy" /></div>
+            <div class="room-img-slide"><img src="hero28.jpeg" alt="Dormitory beds" loading="lazy" /></div>
+            <div class="room-img-slide"><img src="hero27.png" alt="Dormitory space" loading="lazy" /></div>
+          </div>
+          <button class="room-img-nav room-img-prev">‹</button>
+          <button class="room-img-nav room-img-next">›</button>
+          <div class="room-img-dots"></div>
+          <span class="room-tag" style="background:#9B6B4F;">DORM</span>
+        </div>
+        <div class="room-body">
+          <div class="room-name">Dormitory</div>
+          <div style="display:flex;gap:0.5rem;align-items:center;margin-bottom:1rem;font-size:0.8rem;color:var(--muted);">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            Suitable for larger groups &amp; reunions
+          </div>
+          <div class="room-meta">
+            <div class="room-feature"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Individual Beds</div>
+            <div class="room-feature"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>Best for Groups</div>
+            <div class="room-feature"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h2l2-7 4 14 3-9 2 2h7"/></svg>Pool Access</div>
+            <div class="room-feature"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>4 Meals/Day</div>
+          </div>
+          <div class="room-footer">
+            <div style="font-size:0.8rem;color:var(--muted);">
+              <div style="font-weight:600;color:var(--gold);">₹3,500 <span style="font-weight:400;font-size:0.72rem;">/ person / night</span></div>
+              <div style="font-size:0.72rem;">Book 1 bed or full dorm</div>
+            </div>
+            <a href="#whatsapp" class="btn btn-gold" style="padding:0.55rem 1.2rem;font-size:0.72rem;">Book</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rooms-slider-nav">
+      <button class="rooms-slider-btn" id="roomsPrev">‹</button>
+      <div class="rooms-slider-dots" id="roomsDots"></div>
+      <button class="rooms-slider-btn" id="roomsNext">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     AMENITIES
+═══════════════════════════════════════════════════════════ -->
+<section id="amenities" class="reveal-section">
+  <div class="amenities-inner">
+    <div class="eyebrow">Everything Included</div>
+    <h2 class="section-title">Resort Amenities</h2>
+    <p class="amenities-lead">Every stay at Dillzan comes with access to our full range of resort facilities — because true luxury means nothing is extra.</p>
+    <div class="amenities-track-wrap">
+      <div class="amenities-track" id="amenitiesTrack">
+
+        <div class="amenity-card">
+          <div class="amenity-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 12h2l2-7 4 14 3-9 2 2h7"/></svg></div>
+          <div class="amenity-name">Swimming Pool</div>
+          <div class="amenity-desc">Outdoor pool open all day with poolside seating — dive in and unwind.</div>
+        </div>
+
+        <div class="amenity-card">
+          <div class="amenity-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+          <div class="amenity-name">Karaoke Nights</div>
+          <div class="amenity-desc">Belt out your favourite songs under the stars — every night is a show!</div>
+        </div>
+
+        <div class="amenity-card">
+          <div class="amenity-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="2"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div>
+          <div class="amenity-name">DJ Music &amp; Dance</div>
+          <div class="amenity-desc">Live DJ sets and dance floor to keep the party going all evening long.</div>
+        </div>
+
+        <div class="amenity-card">
+          <div class="amenity-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="9" width="18" height="13" rx="1"/><path d="M8 9V5a4 4 0 0 1 8 0v4"/></svg></div>
+          <div class="amenity-name">Table Tennis</div>
+          <div class="amenity-desc">Full-size table tennis setup — challenge your friends and family to a match.</div>
+        </div>
+
+        <div class="amenity-card">
+          <div class="amenity-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="5" r="3"/><path d="M12 8v8"/><path d="M9 21h6"/><path d="M5 12h4"/><path d="M15 12h4"/></svg></div>
+          <div class="amenity-name">Dart Board</div>
+          <div class="amenity-desc">Test your aim and precision on our dart board — friendly competition awaits.</div>
+        </div>
+
+        <div class="amenity-card">
+          <div class="amenity-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M8 12h8"/><path d="M12 8v8"/></svg></div>
+          <div class="amenity-name">Carrom Board</div>
+          <div class="amenity-desc">Classic carrom for all ages — great fun for families and groups.</div>
+        </div>
+
+        <div class="amenity-card">
+          <div class="amenity-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+          <div class="amenity-name">Indoor Games</div>
+          <div class="amenity-desc">A variety of indoor games and activities to keep guests entertained indoors.</div>
+        </div>
+
+        <div class="amenity-card">
+          <div class="amenity-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></div>
+          <div class="amenity-name">Peaceful Green Surroundings</div>
+          <div class="amenity-desc">Lush greenery and tranquil open spaces to breathe, relax and rejuvenate.</div>
+        </div>
+
+        <div class="amenity-card">
+          <div class="amenity-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></div>
+          <div class="amenity-name">Live Barbecue</div>
+          <div class="amenity-desc">Sizzling live BBQ evenings with fresh meats, kebabs and coastal favourites.</div>
+        </div>
+
+        <div class="amenity-card">
+          <div class="amenity-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <div class="amenity-name">Family-Friendly</div>
+          <div class="amenity-desc">A warm, safe and welcoming environment designed for families of all sizes.</div>
+        </div>
+
+        <div class="amenity-card">
+          <div class="amenity-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/><path d="M4 21v-1a2 2 0 0 1 2-2h1"/><path d="M20 21v-1a2 2 0 0 0-2-2h-1"/></svg></div>
+          <div class="amenity-name">Senior Citizen Friendly</div>
+          <div class="amenity-desc">Thoughtful hospitality and special care for elderly guests — comfort first.</div>
+        </div>
+
+      </div>
+    </div>
+    <div class="amenities-nav">
+      <button class="amenities-nav-btn" id="amenitiesPrev">‹</button>
+      <button class="amenities-nav-btn" id="amenitiesNext">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOUNDER'S NOTE — CREATIVE REDESIGN
+═══════════════════════════════════════════════════════════ -->
+<section id="founder" class="reveal-section">
+  <!-- Decorative background elements -->
+  <div class="founder-bg-deco">
+    <div class="founder-bg-circle founder-bg-c1"></div>
+    <div class="founder-bg-circle founder-bg-c2"></div>
+    <div class="founder-bg-lines"></div>
+  </div>
+
+  <div class="founder-inner">
+    <!-- LEFT: Portrait with layered design -->
+    <div class="founder-portrait-wrap reveal-left">
+      <div class="founder-portrait-card">
+        <img src="owner.jpeg" alt="Dillzan Wadia, Founder & Owner" loading="lazy" />
+      </div>
+      <div class="founder-portrait-accent-bar"></div>
+    </div>
+
+    <!-- RIGHT: Story & Quote -->
+    <div class="founder-text reveal-right" style="padding: 2.5rem 0;">
+      <div class="eyebrow">The Man Behind the Magic</div>
+      <h2 class="section-title founder-headline">From the <em>Silver Screen</em><br>to Your <em>Dream Escape</em></h2>
+
+      <div class="founder-quote-wrap">
+        <div class="founder-quote-mark">"</div>
+        <blockquote class="founder-quote">
+          For my guests, there is no 'No'. My aim is to see people enjoy themselves and feel like they are in their own home — with warmth, comfort, and freedom.
+        </blockquote>
+      </div>
+
+      <p class="founder-body">Actor Dillzan Wadia — known for <strong>Sarfaroshi, Four Pillars of Basement, Bollywood Villa</strong> and several television shows — has channelled his passion for people into creating one of Alibaug's warmest boutique retreats. From his humble beginnings in Vadodara, running a fast-food joint at King Circle while pursuing his acting dreams at Khalsa Junior College, to starring in acclaimed films and now building resorts in Goa, Lonavala and Alibaug, Dillzan's journey is one of heart.</p>
+
+      <p class="founder-body">"This quality of hosting comes from my parents," he shares. "At our home, every guest was treated with love and humility — and that's the spirit I bring to The Dillzan Resort."</p>
+
+      <div class="founder-divider">
+        <span></span><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><span></span>
+      </div>
+
+      <div class="founder-sig-row">
+        <div>
+          <div class="founder-sig">Dillzan Wadia</div>
+          <div class="founder-sig-title">Actor · Founder & Owner, The Dillzan Resort</div>
+        </div>
+        <a href="#whatsapp" class="btn btn-gold" style="flex-shrink:0;">Meet Us →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     THE DILLZAN PALATE — DINING
+═══════════════════════════════════════════════════════════ -->
+<section id="palate" class="reveal-section">
+  <div class="palate-inner">
+    <div class="dining-hero">
+
+      <!-- Left: Photo Grid -->
+      <div class="dining-photos">
+        <div class="dining-photo-grid">
+          <div class="dp dp-big">
+            <img src="cuisine.jpg" alt="Dining at Dillzan" loading="lazy" />
+            <div class="dp-overlay"></div>
+            <div class="dp-label">Coastal Flavours</div>
+          </div>
+          <div class="dp">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80" alt="Seafood" loading="lazy" />
+            <div class="dp-overlay"></div>
+            <div class="dp-label">Fresh Catch</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Content -->
+      <div class="dining-content">
+        <div>
+          <div class="eyebrow">Signature Cuisine</div>
+          <h2 class="section-title">The Dillzan<br>Dining</h2>
+        </div>
+
+        <p class="dining-desc">From sizzling Konkan seafood to authentic Parsi delicacies — every dish at Dillzan is cooked with love, tradition, and the freshest local ingredients. Four meals a day included in your stay. "Every meal tells a story of tradition and love."</p>
+
+        <div class="cuisine-badges">
+          <div class="cuisine-badge"><div class="cuisine-badge-dot"></div>Parsi Cuisine</div>
+          <div class="cuisine-badge"><div class="cuisine-badge-dot"></div>Gavathi-Style Cooking</div>
+          <div class="cuisine-badge"><div class="cuisine-badge-dot"></div>Konkan Specialties</div>
+          <div class="cuisine-badge"><div class="cuisine-badge-dot"></div>Sali Boti</div>
+          <div class="cuisine-badge"><div class="cuisine-badge-dot"></div>Dhansak</div>
+          <div class="cuisine-badge"><div class="cuisine-badge-dot"></div>Sas Ni Machi</div>
+          <div class="cuisine-badge"><div class="cuisine-badge-dot"></div>Fresh Seafood</div>
+          <div class="cuisine-badge"><div class="cuisine-badge-dot"></div>Live Barbecue</div>
+        </div>
+
+        <div class="dining-stats">
+          <div>
+            <div class="dining-stat-num">4</div>
+            <div class="dining-stat-label">Meals / Day</div>
+          </div>
+          <div>
+            <div class="dining-stat-num">100%</div>
+            <div class="dining-stat-label">Fresh & Local</div>
+          </div>
+          <div>
+            <div class="dining-stat-num">₹3,500</div>
+            <div class="dining-stat-label">All Inclusive</div>
+          </div>
+        </div>
+
+        <button class="view-menu-btn" onclick="openMenuModal()">
+          View Full Menu
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     MENU MODAL
+═══════════════════════════════════════════════════════════ -->
+<div class="menu-modal-overlay" id="menuOverlay" onclick="closeMenuModal()"></div>
+<div class="menu-modal" id="menuModal" role="dialog" aria-modal="true" aria-label="Full Menu">
+
+  <!-- Header -->
+  <div class="menu-modal-header">
+    <div class="menu-modal-title">Our <span>Menu</span></div>
+    <button class="menu-modal-close" onclick="closeMenuModal()" aria-label="Close menu">✕</button>
+  </div>
+
+  <!-- Tab Nav -->
+  <div class="menu-modal-tabs" id="menuModalTabs">
+    <button class="menu-modal-tab active" data-panel="mp-veg" onclick="switchMenuTab(this)">
+      <span class="menu-modal-tab-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12"/><path d="M12 6v6l4 2"/><path d="M2 8c1-3 4-5 7-5"/></svg></span> Veg &amp; Snacks
+    </button>
+    <button class="menu-modal-tab" data-panel="mp-seafood" onclick="switchMenuTab(this)">
+      <span class="menu-modal-tab-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 7c0 0-2-1-6-1S6 7 6 7c-2 2-3 5-3 5s5-1 9-1 9 1 9 1-1-3-3-5z"/><path d="M6 7L3 4M18 7l3-3"/><circle cx="12" cy="11" r="1" fill="currentColor"/></svg></span> Seafood
+    </button>
+    <button class="menu-modal-tab" data-panel="mp-chicken" onclick="switchMenuTab(this)">
+      <span class="menu-modal-tab-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 11a4 4 0 0 0-8 0c0 1.5.5 3 2 4l-2 5h8l-2-5c1.5-1 2-2.5 2-4z"/><path d="M12 7V3"/><path d="M10 3h4"/></svg></span> Chicken &amp; Eggs
+    </button>
+    <button class="menu-modal-tab" data-panel="mp-drinks" onclick="switchMenuTab(this)">
+      <span class="menu-modal-tab-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 2h8l1 7H7L8 2z"/><path d="M7 9c0 5 2 9 5 9s5-4 5-9"/><path d="M10 15h4"/></svg></span> Beverages
+    </button>
+  </div>
+
+  <!-- Body -->
+  <div class="menu-modal-body">
+
+    <!-- Veg & Snacks -->
+    <div class="menu-modal-panel active" id="mp-veg">
+      <div class="menu-section-label">Fries & Bites</div>
+      <div class="menu-modal-item">
+        <div class="menu-modal-item-left">
+          <div class="menu-modal-item-name">French Fries</div>
+          <div class="menu-modal-item-desc">Crispy golden fries served with dipping sauce</div>
+        </div>
+        <span class="menu-modal-item-tag tag-veg">Veg</span>
+      </div>
+      <div class="menu-modal-item">
+        <div class="menu-modal-item-left">
+          <div class="menu-modal-item-name">Pari Pari French</div>
+          <div class="menu-modal-item-desc">Spicy peri peri seasoned fries — full of flavour</div>
+        </div>
+        <span class="menu-modal-item-tag tag-veg">Veg</span>
+      </div>
+      <div class="menu-section-label">Pizza & Sandwich</div>
+      <div class="menu-modal-item">
+        <div class="menu-modal-item-left">
+          <div class="menu-modal-item-name">Pizza</div>
+          <div class="menu-modal-item-desc">Classic veg pizza with fresh toppings</div>
+        </div>
+        <span class="menu-modal-item-tag tag-veg">Veg</span>
+      </div>
+      <div class="menu-modal-item">
+        <div class="menu-modal-item-left">
+          <div class="menu-modal-item-name">Cheez Sandwich</div>
+          <div class="menu-modal-item-desc">Toasted cheese sandwich, comfort food at its best</div>
+        </div>
+        <span class="menu-modal-item-tag tag-veg">Veg</span>
+      </div>
+      <div class="menu-section-label">Light Snacks</div>
+      <div class="menu-modal-item">
+        <div class="menu-modal-item-left">
+          <div class="menu-modal-item-name">Roasted Peanuts</div>
+          <div class="menu-modal-item-desc">Freshly roasted salted peanuts</div>
+        </div>
+        <span class="menu-modal-item-tag tag-veg">Veg</span>
+      </div>
+      <div class="menu-modal-item">
+        <div class="menu-modal-item-left">
+          <div class="menu-modal-item-name">Boiled Peanuts</div>
+          <div class="menu-modal-item-desc">Soft boiled peanuts with a pinch of salt</div>
+        </div>
+        <span class="menu-modal-item-tag tag-veg">Veg</span>
+      </div>
+      <div class="menu-modal-item">
+        <div class="menu-modal-item-left">
+          <div class="menu-modal-item-name">Masala Papad</div>
+          <div class="menu-modal-item-desc">Crunchy papad with onion, tomato & spice topping</div>
+        </div>
+        <span class="menu-modal-item-tag tag-veg">Veg</span>
+      </div>
+    </div>
+
+    <!-- Seafood -->
+    <div class="menu-modal-panel" id="mp-seafood">
+      <div class="menu-section-label">Fish Fry</div>
+      <div class="menu-modal-item">
+        <div class="menu-modal-item-left">
+          <div class="menu-modal-item-name">Pomfret Fish Fry</div>
+          <div class="menu-modal-item-desc">Fresh pomfret, marinated in Konkan spices & shallow fried</div>
+        </div>
+        <span class="menu-modal-item-tag tag-nonveg">Non-Veg</span>
+      </div>
+      <div class="menu-modal-item">
+        <div class="menu-modal-item-left">
+          <div class="menu-modal-item-name">Surmai Fry</div>
+          <div class="menu-modal-item-desc">King fish fry with traditional coastal masala</div>
+        </div>
+        <span class="menu-modal-item-tag tag-nonveg">Non-Veg</span>
+      </div>
+      <div class="menu-modal-item">
+        <div class="menu-modal-item-left">
+          <div class="menu-modal-item-name">Bangada Fry</div>
+          <div class="menu-modal-item-desc">Mackerel fish fry with tangy Konkan marination</div>
+        </div>
+        <span class="menu-modal-item-tag tag-nonveg">Non-Veg</span>
+      </div>
+      <div class="menu-section-label">Prawns & Crabs</div>
+      <div class="menu-modal-item">
+        <div class="menu-modal-item-left">
+          <div class="menu-modal-item-name">Prawns Golden Fry</div>
+          <div class="menu-modal-item-desc">Crispy golden fried prawns with spicy coating</div>
+        </div>
+        <span class="menu-modal-item-tag tag-nonveg">Non-Veg</span>
+      </div>
+      <div class="menu-modal-item">
+        <div class="menu-modal-item-left">
+          <div class="menu-modal-item-name">BBQ Crabs</div>
+          <div class="menu-modal-item-desc">Fresh Alibaug crabs grilled to perfection</div>
+        </div>
+        <span class="menu-modal-item-tag tag-nonveg">Non-Veg</span>
+      </div>
+      <div class="menu-modal-item">
+        <div class="menu-modal-item-left">
+          <div class="menu-modal-item-name">Honey Chilly Prawns</div>
+          <div class="menu-modal-item-desc">Juicy prawns in sticky honey chilly glaze</div>
+        </div>
+        <span class="menu-modal-item-tag tag-nonveg">Non-Veg</span>
+      </div>
+    </div>
+
+    <!-- Chicken & Eggs -->
+    <div class="menu-modal-panel" id="mp-chicken">
+      <div class="menu-section-label">Chicken Specials</div>
+      <div class="menu-modal-item">
+        <div class="menu-modal-item-left">
+          <div class="menu-modal-item-name">Chicken Pizza</div>
+          <div class="menu-modal-item-desc">Loaded chicken pizza with signature sauce</div>
+        </div>
+        <span class="menu-modal-item-tag tag-nonveg">Non-Veg</span>
+      </div>
+      <div class="menu-modal-item">
+        <div class="menu-modal-item-left">
+          <div class="menu-modal-item-name">Honey Chilly Chicken</div>
+          <div class="menu-modal-item-desc">Crispy chicken tossed in sweet & spicy honey chilly sauce</div>
+        </div>
+        <span class="menu-modal-item-tag tag-nonveg">Non-Veg</span>
+      </div>
+      <div class="menu-modal-item">
+        <div class="menu-modal-item-left">
+          <div class="menu-modal-item-name">Chicken Mayo</div>
+          <div class="menu-modal-item-desc">Tender chicken with creamy mayo dressing</div>
+        </div>
+        <span class="menu-modal-item-tag tag-nonveg">Non-Veg</span>
+      </div>
+      <div class="menu-section-label">Eggs</div>
+      <div class="menu-modal-item">
+        <div class="menu-modal-item-left">
+          <div class="menu-modal-item-name">Boiled Eggs</div>
+          <div class="menu-modal-item-desc">Simple boiled eggs — light & healthy snack</div>
+        </div>
+        <span class="menu-modal-item-tag tag-nonveg">Non-Veg</span>
+      </div>
+    </div>
+
+    <!-- Beverages -->
+    <div class="menu-modal-panel" id="mp-drinks">
+      <div class="menu-section-label">Refreshments</div>
+      <div class="menu-modal-item">
+        <div class="menu-modal-item-left">
+          <div class="menu-modal-item-name">Fresh Lime</div>
+          <div class="menu-modal-item-desc">Refreshing fresh lime juice — sweet or salted</div>
+        </div>
+        <span class="menu-modal-item-tag tag-veg">Veg</span>
+      </div>
+      <div class="menu-modal-item">
+        <div class="menu-modal-item-left">
+          <div class="menu-modal-item-name">Ice Milk</div>
+          <div class="menu-modal-item-desc">Chilled cold milk — simple and refreshing</div>
+        </div>
+        <span class="menu-modal-item-tag tag-veg">Veg</span>
+      </div>
+    </div>
+
+  </div><!-- /.menu-modal-body -->
+
+  <!-- Footer note -->
+  <div class="menu-modal-footer">
+    <div class="menu-modal-footer-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11h18M3 11c0-4 4-7 9-7s9 3 9 7"/><path d="M3 11v3a9 9 0 0 0 18 0v-3"/><path d="M12 18v3M8 21h8"/></svg></div>
+    <div class="menu-modal-footer-text">
+      <strong>₹3,500 per person / per night</strong> includes comfortable stay + Breakfast, Lunch, Evening Tea &amp; Snacks, and Dinner. Every meal freshly prepared with love and hospitality.
+    </div>
+  </div>
+
+</div><!-- /.menu-modal -->
+
+<!-- ═══════════════════════════════════════════════════════════
+     WHATSAPP ENQUIRY
+═══════════════════════════════════════════════════════════ -->
+<section id="whatsapp" class="reveal-section">
+  <div class="wa-inner">
+    <div class="wa-header">
+      <h2 class="wa-title">Book Your Stay</h2>
+      <p class="wa-desc">Fill in your details below and send us your enquiry instantly — our reservations team is available every day, all day.</p>
+    </div>
+    <div class="book-layout">
+      <!-- ── Enquiry / Booking Form ── -->
+      <form class="enquiry-form reveal-left" id="enquiryForm" onsubmit="return false;">
+        <div class="enquiry-field">
+          <label>Guest Name</label>
+          <input type="text" id="ef-name" placeholder="Full name" required />
+        </div>
+        <div class="enquiry-field">
+          <label>Phone Number</label>
+          <input type="tel" id="ef-phone" placeholder="+91 98765 43210" required />
+        </div>
+        <div class="enquiry-field full">
+          <label>Email (optional)</label>
+          <input type="email" id="ef-email" placeholder="you@example.com" />
+        </div>
+        <div class="enquiry-field">
+          <label>Check In</label>
+          <input type="date" id="ef-checkin" required />
+        </div>
+        <div class="enquiry-field">
+          <label>Check Out</label>
+          <input type="date" id="ef-checkout" required />
+        </div>
+        <div class="enquiry-field">
+          <label>No. of Guests</label>
+          <input type="number" id="ef-guests" min="1" value="2" />
+        </div>
+        <div class="enquiry-field">
+          <label>Room Type</label>
+          <select id="ef-room">
+            <option value="Double Occupancy Room">Deluxe Room (2 Guests)</option>
+            <option value="Triple Occupancy Room">Premium Room (3 Guests)</option>
+            <option value="Family Room">Spacious Family Room (4–5 Guests)</option>
+            <option value="Dormitory">Dormitory (Large Groups)</option>
+      
+          </select>
+        </div>
+        <div class="enquiry-field full">
+          <label>Special Requests (optional)</label>
+          <input type="text" id="ef-notes" placeholder="Airport pickup, anniversary setup, dietary needs, etc." />
+        </div>
+
+        <!-- Live Bill Summary -->
+        <div class="enquiry-bill">
+          <div class="enquiry-bill-row"><span>Rate per Person / Night</span><span id="bill-rate">₹3,500</span></div>
+          <div class="enquiry-bill-row"><span style="font-size:0.78rem;color:var(--gold);">✓ Includes 4 Meals/Day &nbsp;✓ Pool Access &nbsp;✓ All Amenities</span></div>
+          <div class="enquiry-bill-row"><span>No. of Guests</span><span id="bill-guests">0</span></div>
+          <div class="enquiry-bill-row"><span>No. of Nights</span><span id="bill-nights">0</span></div>
+          <div class="enquiry-bill-row total"><span>Total Estimated Amount</span><span id="bill-total">₹0</span></div>
+        </div>
+
+        <div class="enquiry-actions">
+          <button type="button" class="wa-btn enquiry-submit" id="ef-submit">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            Send via WhatsApp
+          </button>
+          <button type="button" class="email-btn enquiry-submit" id="ef-submit-email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Send via Email
+          </button>
+        </div>
+      </form>
+
+      <!-- ── Map + Image Slider ── -->
+      <div class="book-side reveal-right">
+        <div class="book-map">
+          <iframe
+            src="https://maps.google.com/maps?q=Dillzan+Resort,+Rahatale,+Dhokawade,+Mandwa+Jetty+Rd,+Alibag,+Maharashtra+402208&output=embed"
+            allowfullscreen loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Dillzan Resort Location">
+          </iframe>
+        </div>
+        <div class="book-image-slider" id="bookImgSlider">
+          <div class="book-image-track">
+            <div class="book-image-slide"><img src="1.jpeg" alt="Dillzan Resort Pool" loading="lazy" /></div>
+            <div class="book-image-slide"><img src="cuisine.jpg" alt="Dillzan Resort Suite" loading="lazy" /></div>
+            <div class="book-image-slide"><img src="gallery12.jpeg" alt="Dillzan Resort Dining" loading="lazy" /></div>
+            <div class="book-image-slide"><img src="hero1.jpeg" alt="Dillzan Resort Architecture" loading="lazy" /></div>
+          </div>
+          <button class="book-image-nav book-image-prev">‹</button>
+          <button class="book-image-nav book-image-next">›</button>
+          <div class="book-image-dots"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     GALLERY
+═══════════════════════════════════════════════════════════ -->
+<section id="gallery" class="reveal-section">
+  <div class="gallery-inner">
+    <div class="gallery-header-row">
+      <div>
+        <div class="eyebrow">Gallery</div>
+        <h2 class="section-title" style="margin-bottom:0.5rem;">Dillzan Through the Lens</h2>
+        <p class="section-lead" style="max-width:560px;">A glimpse into the warmth, laughter, food, and memories created at The Dillzan Resort, Alibaug.</p>
+      </div>
+    </div>
+    <div class="gallery-slider-wrap">
+      <div class="gallery-track" id="galleryTrack">
+        <div class="gallery-slide">
+          <img src="family1.jpeg" alt="Infinity Pool" loading="lazy" />
+          
+        </div>
+        <div class="gallery-slide">
+          <img src="family2.jpeg" alt="Luxury Suite" loading="lazy" />
+          
+        </div>
+        <div class="gallery-slide">
+          <video src="view2.mp4" controls preload="metadata"></video>
+          
+        </div>
+        <div class="gallery-slide">
+          <img src="food1.jpeg" alt="Fine Dining" loading="lazy" />
+          
+        </div>
+        <div class="gallery-slide">
+          <img src="gallery.jpeg" alt="Resort Architecture" loading="lazy" />
+          
+        </div>
+        
+        <div class="gallery-slide">
+          <img src="gallery1.jpeg" alt="Ayurvedic Spa" loading="lazy" />
+          
+        </div>
+        <div class="gallery-slide">
+          <img src="hero21.png" alt="Stargazing" loading="lazy" />
+          
+        </div>
+        <div class="gallery-slide">
+          <img src="hero22.png" alt="Stargazing" loading="lazy" />
+          
+        </div>
+        <div class="gallery-slide">
+          <img src="gallery2.jpeg" alt="Forest Walk" loading="lazy" />
+         
+        </div>
+        <div class="gallery-slide">
+          <img src="hero1.jpeg" alt="Stargazing" loading="lazy" />
+     
+        </div>
+        
+        <div class="gallery-slide">
+          <img src="family3.jpeg" alt="Culinary Delights" loading="lazy" />
+          
+        </div>
+        <div class="gallery-slide">
+          <img src="gallery4.jpeg" alt="Garden View" loading="lazy" />
+          
+        </div>
+        <div class="gallery-slide">
+          <img src="gallery7.jpeg" alt="Stargazing" loading="lazy" />
+          
+        </div>
+        <div class="gallery-slide">
+          <img src="gallery6.jpeg" alt="Stargazing" loading="lazy" />
+          
+        </div>
+        
+        <div class="gallery-slide">
+          <img src="gallery5.jpeg" alt="Stargazing" loading="lazy" />
+          
+        </div>
+      </div>
+    </div>
+    <div class="gallery-nav">
+      <button class="gallery-nav-btn" id="galleryPrev">‹</button>
+      <div class="gallery-dots" id="galleryDots"></div>
+      <button class="gallery-nav-btn" id="galleryNext">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     GUEST STORIES — TESTIMONIALS
+═══════════════════════════════════════════════════════════ -->
+<section id="testimonials" class="reveal-section">
+  <div class="testimonials-header" style="display:flex; align-items:flex-end; justify-content:space-between; gap:1.5rem; flex-wrap:wrap;">
+    <div>
+      <div class="eyebrow">Guest Stories</div>
+      <h2 class="section-title" style="margin-bottom:0;">What Our Guests Say</h2>
+    </div>
+    <a href="https://maps.app.goo.gl/NDVLFtQJqKSLtLwh8" target="_blank" class="btn btn-outline" style="display:inline-flex; align-items:center; gap:0.6rem;">
+      <svg width="16" height="16" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.99.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+      Review us on Google
+    </a>
+  </div>
+  <div class="carousel-wrap">
+    <div class="carousel-track" id="carouselTrack">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"5-star experience at The Dillzan resort — owned by Bollywood's talented Dillzan Wadia. Friendly staff, stunning views, and top-notch amenities. Highly recommended for a relaxing getaway. 5/5 stars."</p>
+        <div class="testi-author">
+          <img class="testi-avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&q=80" alt="Shirin Wadia" loading="lazy" />
+          <div>
+            <div class="testi-name">Shirin Wadia</div>
+            <div class="testi-origin">Google Review — 5/5</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Fantastic resort to be in. Near the M2M ferry, easy to reach. The service was super good — the owner and staff are always there at your service. They also have all the Bawas coming in, so you'll always have joyous people around to enjoy with. The memories gathered will truly be remembered."</p>
+        <div class="testi-author">
+          <img class="testi-avatar" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80" alt="Shabana Shaikh786" loading="lazy" />
+          <div>
+            <div class="testi-name">Shabana Shaikh786</div>
+            <div class="testi-origin">Google Review — 5/5</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Dillzan Resort is a nice weekend getaway. Great hospitality. The resort is clean, lively and fun. The Parsi food is delicious. Highly recommend this resort to anyone looking to unwind and recharge."</p>
+        <div class="testi-author">
+          <img class="testi-avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Dinyar Tatary" loading="lazy" />
+          <div>
+            <div class="testi-name">Dinyar Tatary</div>
+            <div class="testi-origin">Google Review — 5/5</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"From the moment we arrived, we felt welcomed and at home. The rooms were clean, spacious and comfortable. The food was a highlight — delicious homely Parsi cuisine made with love. Karaoke, dancing and BBQ evenings brought all the guests together. A heartfelt thank you to Mr. Dillzan for his humility and personal involvement, and to Sonali for her kindness and attentiveness. The perfect place for a peaceful getaway!"</p>
+        <div class="testi-author">
+          <img class="testi-avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80" alt="Alisha Costa Correia" loading="lazy" />
+          <div>
+            <div class="testi-name">Alisha Costa Correia</div>
+            <div class="testi-origin">Google Review — Local Guide · 5/5</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Great place to stay. Good ambience. Superb seafood. Evenings usually spent well here with in-house Housie and Karaoke."</p>
+        <div class="testi-author">
+          <img class="testi-avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&q=80" alt="Mehrzad Tatary" loading="lazy" />
+          <div>
+            <div class="testi-name">Mehrzad Tatary</div>
+            <div class="testi-origin">Google Review — 5/5</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Had an amazing stay at Dillzan Resort — the entire place has such a warm and welcoming atmosphere. Perfect for families, friends, couples and even solo travellers. Rooms were comfortable, clean and well maintained. The food was delicious with plenty of veg and non-veg options. The pool area was a highlight, and the karaoke and BBQ nights made the evenings best — a whole different bonding and vibe."</p>
+        <div class="testi-author">
+          <img class="testi-avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&q=80" alt="Vabiz Pestonji" loading="lazy" />
+          <div>
+            <div class="testi-name">Vabiz Pestonji</div>
+            <div class="testi-origin">Google Review — Local Guide · 5/5</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-nav" id="carouselNav"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════════════ -->
+<footer id="footer">
+  <div class="footer-grid">
+    <!-- Brand -->
+    <div>
+      <div class="footer-logo-box" style="width:auto;border:none;padding:0;gap:0.75rem;">
+        <img src="logo.png" alt="Dillzan Resort Logo" class="footer-logo-img" style="height:50px;width:auto;max-width:none;" />
+        <span class="footer-brand-name" style="margin-bottom:0;white-space:nowrap;">THE DILLZAN RESORT</span>
+      </div>
+      <p class="footer-tagline">Khava Nu, Piva Nu, Ane Maja Ni Life! · 1 min from Mandwa Jetty · Comfort, Warmth &amp; Unforgettable Hospitality.</p>
+      <div class="footer-socials">
+        <div class="footer-social" title="Instagram">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </div>
+        <div class="footer-social" title="Facebook">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </div>
+        <div class="footer-social" title="YouTube">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+        </div>
+        <div class="footer-social" title="TripAdvisor">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+      </div>
+    </div>
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <div class="footer-col-title">Quick Links</div>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#rooms">Rooms & Suites</a></li>
+        <li><a href="#amenities">Amenities</a></li>
+        <li><a href="#founder">Founder's Note</a></li>
+        <li><a href="#palate">Dining</a></li>
+        <li><a href="#whatsapp">Contact Us</a></li>
+        <li><a href="#testimonials">Guest Stories</a></li>
+      </ul>
+    </div>
+    <!-- Experiences -->
+    <div class="footer-col">
+      <div class="footer-col-title">Activities</div>
+      <ul>
+        <li><a href="#amenities">Swimming Pool</a></li>
+        <li><a href="#amenities">Karaoke Nights</a></li>
+        <li><a href="#amenities">DJ Music &amp; Dance</a></li>
+        <li><a href="#amenities">Table Tennis</a></li>
+        <li><a href="#amenities">Dart Board</a></li>
+        <li><a href="#amenities">Carrom Board</a></li>
+        <li><a href="#amenities">Indoor Games</a></li>
+        <li><a href="#amenities">Live Barbecue</a></li>
+        <li><a href="#amenities">Family &amp; Senior Friendly</a></li>
+      </ul>
+    </div>
+    <!-- Contact -->
+    <div class="footer-col">
+      <div class="footer-col-title">Find Us</div>
+      <address class="footer-address">
+        Dillzan Resort<br>
+        Near Ranavali Farm House And Resort, At: Rahatale,<br>
+        Post: Dhokawade, Ta:, Mandwa Jetty Rd, Rahatale,<br>
+        Alibag, Maharashtra 402208<br>
+        1 Min from Mandwa Jetty<br>
+        Check-in 12PM · Check-out 11AM
+        <a href="tel:+917715966111">+91 77159 66111</a>
+        <a href="mailto:info@dillzanresort.com">info@dillzanresort.com</a>
+      </address>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 The Dillzan Resort. All rights reserved.</span>
+    <span>
+      <a href="#">Privacy Policy</a> &nbsp;·&nbsp;
+      <a href="#">Terms of Service</a> &nbsp;·&nbsp;
+      <a href="#">Cancellation Policy</a>
+    </span>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════════════════════
+     LIGHTBOX
+═══════════════════════════════════════════════════════════ -->
+<div id="lightbox" role="dialog" aria-modal="true">
+  <button class="lb-close" id="lbClose">✕</button>
+  <button class="lb-prev" id="lbPrev">‹</button>
+  <div class="lb-img-wrap">
+    <img id="lbImg" src="" alt="" />
+    <video id="lbVideo" controls style="display:none;"></video>
+    <div class="lb-caption" id="lbCaption"></div>
+    <div class="lb-counter" id="lbCounter"></div>
+  </div>
+  <button class="lb-next" id="lbNext">›</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
